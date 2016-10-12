@@ -1,0 +1,16 @@
+version: '2'
+services:
+    dns:
+        image: bind_dns_gui_wheezy
+
+        container_name: bind_dns_gui
+
+        volumes:
+           - "./data/bind:/data/bind"
+           - "./var/cache:/var/cache/bind"
+           - "./var/dynamic:/var/dynamic"
+
+        ports:
+           - "53:53/udp"
+           - "53:53"
+           - "10000:10000"

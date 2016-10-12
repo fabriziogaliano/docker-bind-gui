@@ -1,0 +1,36 @@
+$ttl 38400
+mosaicoon.internal.	IN	SOA	192.168.10.240. sysad.mosaicoon.com. (
+			1474639043
+			10800
+			3600
+			604800
+			38400 )
+mosaicoon.internal.	IN	NS	192.168.10.240.
+db01.prod.mosaicoon.internal.	IN	A	192.168.10.84
+asset.mosaicoon.internal.	IN	A	192.168.10.66
+dns01.prod.mosaicoon.internal.	IN	A	192.168.10.240
+dns02.prod.mosaicoon.internal.	IN	A	192.168.10.135
+pub-lb01.prod.mosaicoon.internal.	IN	A	192.168.10.66
+rlog01.prod.mosaicoon.internal.	IN	A	192.168.10.146
+rlog02.prod.mosaicoon.internal.	IN	A	192.168.10.127
+itmng01.prod.mosaicoon.internal.	IN	A	192.168.10.150
+db01.dev.mosaicoon.internal.	IN	A	192.168.10.105
+manager01.dev.mosaicoon.internal.	IN	A	192.168.10.109
+priv-lb01.dev.mosaicoon.internal.	IN	A	192.168.10.106
+nas01.prod.mosaicoon.internal.	IN	A	192.168.10.68
+support.mosaicoon.internal.	IN	A	192.168.10.106
+nas01.dev.mosaicoon.internal.	IN	A	192.168.10.80
+worker01.dev.mosaicoon.internal.	IN	A	192.168.10.55
+mongo01.dev.mosaicoon.internal.	IN	A	192.168.10.181
+reposw01.prod.mosaicoon.internal.	IN	A	192.168.10.247
+mongo01.prod.mosaicoon.internal.	IN	A	192.168.10.163
+unifi.mosaicoon.internal.	IN	A	192.168.10.92
+ldap.mosaicoon.internal.	IN	A	192.168.10.66
+ldap01.prod.mosaicoon.internal.	IN	A	192.168.10.82
+ci01.prod.mosaicoon.internal.	IN	A	192.168.10.29
+nms01.prod.mosaicoon.internal.	IN	A	192.168.10.31
+kibana.mosaicoon.internal.	IN	A	192.168.10.106
+nms.mosaicoon.internal.	IN	A	192.168.10.106
+app01.dev.mosaicoon.internal.	IN	A	192.168.10.35
+moses01.prod.mosaicoon.internal.	IN	A	192.168.10.103
+octopus01.dev.mosaicoon.internal.	IN	A	192.168.10.151
