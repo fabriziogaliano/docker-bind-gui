@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER Fabrizio Galiano 'fabrizio.galiano@mosaicoon.com'
+MAINTAINER Fabrizio Galiano 'fabrizio.galiano@hotmail.com'
 LABEL description='BIND DNS Server with Webmin Gui'
 
 ENV DATA_DIR=/data \
