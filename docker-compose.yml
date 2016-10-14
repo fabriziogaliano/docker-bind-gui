@@ -1,7 +1,7 @@
 version: '2'
 services:
     dns:
-        image: bind_dns_gui_wheezy
+        build: .
 
         container_name: bind_dns_gui
 
