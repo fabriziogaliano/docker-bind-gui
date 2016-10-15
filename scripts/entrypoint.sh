@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-ROOT_PASSWORD=${ROOT_PASSWORD:-passwordhere}
 WEBMIN_ENABLED=${WEBMIN_ENABLED:-true}
 
 BIND_DATA_DIR=${DATA_DIR}/bind
@@ -41,7 +40,7 @@ create_webmin_data_dir() {
 }
 
 set_root_passwd() {
-  echo "root:$ROOT_PASSWORD" | chpasswd
+  echo "root:WebminPassword" | chpasswd
 }
 
 create_pid_dir() {

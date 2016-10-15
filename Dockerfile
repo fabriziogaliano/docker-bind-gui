@@ -16,10 +16,10 @@ RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes && apt-get update \
  && rm -rf /tmp/webmin_${WEBMIN_VERSION}_all.deb \
  && rm -rf /var/lib/apt/lists/*
 
-COPY entrypoint.sh /sbin/entrypoint.sh
-RUN chmod 755 /sbin/entrypoint.sh
+COPY scripts/ /scripts/
+RUN chmod 755 /scripts/ -R
 
 EXPOSE 53/udp 53/tcp 10000/tcp
 VOLUME ["${DATA_DIR}"]
-ENTRYPOINT ["/sbin/entrypoint.sh"]
+ENTRYPOINT ["/scripts/entrypoint.sh"]
 CMD ["/usr/sbin/named"]
