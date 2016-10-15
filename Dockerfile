@@ -5,7 +5,7 @@ LABEL description='BIND DNS Server with Webmin Gui'
 
 ENV DATA_DIR=/data \
     BIND_USER=bind \
-    WEBMIN_VERSION=1.810
+    WEBMIN_VERSION=1.820
 
 RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y vim wget bind9 perl libnet-ssleay-perl openssl \
