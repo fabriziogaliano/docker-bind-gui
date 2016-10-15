@@ -40,7 +40,7 @@ options {
 
         dnssec-validation auto;
 
-        allow-recursion { 192.168.1.0/24 192.168.10.0/24; 172.16.0.0/16; 10.0.0.0/16; };
+        allow-recursion { 192.168.1.0/24; 192.168.10.0/24; 172.16.0.0/16; 10.0.0.0/16; };
 
         auth-nxdomain no;    # conform to RFC1035
         listen-on-v6 { any; };
