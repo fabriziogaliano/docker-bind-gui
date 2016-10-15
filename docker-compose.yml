@@ -1,12 +1,12 @@
 version: '2'
 services:
     dns:
-        build: .
+        image: fabriziogaliano/docker-bind-gui
 
         container_name: bind_dns_gui
         
         environment:
-           GUIPWD_WEBMIN: custompassword
+           GUIPWD_WEBMIN: furriuni
 
 #        volumes:
 #           - "./data/bind:/data/bind"
