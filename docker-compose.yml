@@ -2,6 +2,8 @@ version: '2'
 services:
     dns:
         image: fabriziogaliano/docker-bind-gui
+        #build:
+        #   context: .
 
         container_name: bind_dns_gui
         
