@@ -21,3 +21,7 @@ services:
            - "10000:10000"
 
         command: bash /scripts/changeWebminPassword.sh
+
+
+
+        
